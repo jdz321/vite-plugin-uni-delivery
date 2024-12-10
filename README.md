@@ -5,9 +5,38 @@
 
 A vite plug-in for customized compilation of uni-app.
 
+## Features
+
+- **Easy to use**: friendly prompt to choose app name/appid before compilation
+- **Extensible**: expose the full ability to customize the behavior of the plugin
+- **Type Strong**: written in TypeScript
+
+## Install
+
+```bash
+npm i vite-plugin-uni-delivery -D 
+
+# yarn 
+yarn add vite-plugin-uni-delivery -D
+
+# pnpm 
+pnpm add vite-plugin-uni-delivery -D
+```
+
 ## Usage
 
-TODO
+Add UniDelivery plugin to vite.config.js / vite.config.ts and configure it:
+
+```ts
+// vite.config.js / vite.config.ts
+import UniDelivery from 'vite-plugin-uni-delivery'
+
+export default {
+  plugins: [
+    UniDelivery()
+  ]
+}
+```
 
 ## Options
 

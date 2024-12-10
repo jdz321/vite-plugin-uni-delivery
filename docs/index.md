@@ -3,20 +3,20 @@ hero:
   title: uni-delivery
   description: A vite plug-in for customized compilation of uni-app.
   actions:
-    - text: Hello
-      link: /
-    - text: World
+    - text: Get started
+      link: /guide
+    - text: API Reference
       link: /
 features:
-  - title: Hello
+  - title: Easy to use
     emoji: 💎
-    description: Put hello description here
-  - title: World
+    description: friendly prompt to choose app name/appid before compilation
+  - title: Extensible
     emoji: 🌈
-    description: Put world description here
-  - title: '!'
+    description: expose the full ability to customize the behavior of the plugin
+  - title: Type Strong
     emoji: 🚀
-    description: Put ! description here
+    description: written in TypeScript
 ---
 
 vite-plugin-uni-delivery
