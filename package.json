@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-uni-delivery",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A vite plug-in for customized compilation of uni-app.",
   "module": "dist/esm/index.js",
   "main": "dist/cjs/index.js",

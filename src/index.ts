@@ -93,9 +93,14 @@ export default function <
           map: null,
         }
       }
-      if (id.endsWith('pages-json-js') && options.transformPagesJson) {
+      if (id.endsWith('pages-json-js')) {
         const json = parseJson(code)
-        options.transformPagesJson(json, answers)
+        if (answers.config?.name && json.globalStyle?.navigationBarTitleText) {
+          json.globalStyle.navigationBarTitleText = answers.config?.name
+        }
+        if (options.transformPagesJson) {
+          options.transformPagesJson(json, answers)
+        }
         return {
           code: JSON.stringify(json),
           map: null,
